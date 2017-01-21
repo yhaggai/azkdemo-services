@@ -2,7 +2,7 @@
 module.exports = function (sync, persistent, path) {
   return {
     // Dependent systems
-    depends: [],
+    depends: ['redis'],
     // More images:  http://images.azk.io
     image: {'docker': 'node:6.9.1'},
     // Steps to execute before running instances
